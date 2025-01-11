@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lentera Undira</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <header class="head_bar">
+      <a class="head_bar_title" href="#home">LENTERA UNDIRA</a>
+      <nav class="navbar">
+        <a href="#home">Home</a><a href="#login">Login</a>
+        <a href="#catalog">Catalog</a><a href="#about">About</a>
+      </nav>
+    </header>
+    <!-- navbar end -->
+
+    <!-- hero section start -->
+    <section id="home" class="hero_section">
+      <div class="content">
+        <h1>Welcome to Lentera Undira</h1>
+        <p>Your Personal Book Collection</p>
+        <a href="#catalog" class="cta-btn">Explore Catalog</a>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <main>
+    <!-- login section start-->
+      <h2 id="login">Login</h2>
+      <section class="input_section">
+        <form id="loginForm">
+          <div class="input">
+            <label for="username">Username</label>
+            <input id="username" type="text" required />
+          </div>
+          <div class="input">
+            <label for="password">Password</label>
+            <input id="password" type="password" required />
+          </div>
+          <button id="loginSubmit" type="submit">Login</button>
+        </form>
+      </section>
+    <!-- login section end-->
+    
+     <!-- Search for books section -->
+     <section class="search_section">
+      <h3>Search for Books</h3>
+      <form id="searchBookForm">
+          <label for="searchBookTitle">Book Title</label>
+          <input id="searchBookTitle" type="text" required />
+          <button id="searchSubmit" type="submit">Search</button>
+      </form>
+  </section>
+
+  <!-- Search results section -->
+  <div class="search-results">
+      <h3>Search Results</h3>
+      <ul id="searchResults"></ul>
+  </div>
+  </main>
+      <!-- catalog section start -->
+      <h2 id="catalog">Catalog</h2>
+      <section class="catalog">
+        <!-- novel -->
+        <h3>Novel</h3>
+        <div class="h-scroll">
+          <article class="card-container">
+            <figure class="card">
+              <img src="novel/atomic-habits.png" alt="atomichabits" />
+              <figcaption class="hidden">
+                <h4>Atomic Habits</h4>
+                <p>James Clear, 2019</p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img src="novel/zero to one.png" alt="zerotoone" />
+              <figcaption class="hidden">
+                <h4>Zero to One</h4>
+                <p>Peter Thiel, 2015</p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img src="novel/Home_Sweet_Loan_cov.png" alt="homesweetloan" />
+              <figcaption class="hidden">
+                <h4>Home Sweet Loan</h4>
+                <p>Almira Bastari, 2022</p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img src="novel/laskar-pelangi.png" alt="laskarpelangi" />
+              <figcaption class="hidden">
+                <h4>Laskar Pelangi</h4>
+                <p>Andrea hirata, 2005</p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img src="novel/koala kumal.png" alt="koalakumal" />
+              <figcaption class="hidden">
+                <h4>Koala Kumal</h4>
+                <p>Raditya Dika, 2015</p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img
+                src="novel/ronggeng-dukuh-puruk.png"
+                alt="ronggeng-dukuh-puruk"
+              />
+              <figcaption class="hidden">
+                <h4>Ronggeng Dukuh Puruk</h4>
+                <p>Ahmad Tohari, 1982</p>
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+      <section class="catalog">
+        <!-- buku fiktif -->
+        <h3>Komik</h3>
+        <div class="h-scroll">
+          <article class="card-container">
+            <figure class="card">
+              <img src="komik/harry potter.png" alt="harrypotter" />
+              <figcaption class="hidden">
+                <h4>Harry Potter and The Prisioner of Azkaban</h4>
+                <p>J.K.Rowling, 1999</p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img src="komik/harry potter secrets.png" alt="harrypottersecrets" />
+              <figcaption class="hidden">
+                <h4>Harry Potter and the Chamber of Secrets</h4>
+                <p>J.K. Rowling, 1998</p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img src="komik/harry potter goblet.png" alt="harrypottergoblet" />
+              <figcaption class="hidden">
+                <h4>Harry Potter and the Goblet of Fire</h4>
+                <p>J.K. Rowling, 2000</p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img src="komik/naruto.png" alt="naruto" />
+              <figcaption class="hidden">
+                <h4>Naruto</h4>
+                <p>Masashi Kishomoto, Vol 66</p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img src="komik/onepiece.png" alt="onepiece" />
+              <figcaption class="hidden">
+                <h4>One Piece</h4>
+                <p>Eiichiro Oda, Vol 106</p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img src="komik/slamdunk.png" alt="slamdunk" />
+              <figcaption class="hidden">
+                <h4>Slam Dunk</h4>
+                <p>Takehiko Inoue, Vol 1</p>
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+      <section class="catalog">
+        <!-- biografi -->
+        <h3>Biografi</h3>
+        <div class="h-scroll">
+          <article class="card-container">
+            <figure class="card">
+              <img src="biografi/buya hamka.png" alt="buyahamka" />
+              <figcaption class="hidden">
+                <h4>Buya Hamka</h4>
+                <p>Ahmad Fuadi, 2021</p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img src="biografi/rudy habbie.png" alt="rudihabbie" />
+              <figcaption class="hidden">
+                <h4>Rudy (Kisah Masa Muda Sang Visioner)</h4>
+                <p>Gina S Noer, 2016</p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img src="biografi/gusdur.png" alt="gusdur" />
+              <figcaption class="hidden">
+                <h4>Gus Dur</h4>
+                <p>Greg Barton, 2002</p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img src="biografi/habibie.png" alt="habibie" />
+              <figcaption class="hidden">
+                <h4>Habibie</h4>
+                <p>R. Toto Sugiharto, 2017</p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img src="biografi/malala.png" alt="malala" />
+              <figcaption class="hidden">
+                <h4>I Am Malala</h4>
+                <p>Malala Yousafzai, 2013</p>
+              </figcaption>
+            </figure>
+            <figure class="card">
+              <img src="biografi/soekarno.png" alt="soekarno" />
+              <figcaption class="hidden">
+                <h4>Sukarno</h4>
+                <p>Anom Whani Wicaksana, 2018</p>
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+      <!-- catalog section end -->
+
+      <!-- about section start -->
+      <h2>About</h2>
+      <section id="about" class="about">
+        <div class="about-container">
+          <article class="card-about">
+            <img src="image/management.png" alt="management" />
+            <h4>Comprehensive Catalog</h4>
+            <p>Save and manage the books you want to read.</p>
+          </article>
+          <article class="card-about">
+            <img src="image/brochure.png" alt="katalog" />
+            <h4>Personal Wishlist</h4>
+            <p>Explore a diverse collection of books across all genres.</p>
+          </article>
+          <article class="card-about">
+            <img src="image/file.png" alt="detail" />
+            <h4>Detailed Information</h4>
+            <p>Get detailed insights about your favorite books.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer start -->
+
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="facebook"></i></a
+        ><a href="#"><i data-feather="twitter"></i></a
+        ><a href="#"><i data-feather="instagram"></i></a
+        ><a href="#"><i data-feather="github"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a><a href="#wishlist">Wishlist</a
+        ><a href="#catalog">Catalog</a><a href="#about">About</a>
+      </div>
+      <div class="credit">
+        <p>&copy; 2024 Lentera Undira. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
